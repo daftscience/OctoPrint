@@ -10,9 +10,22 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+        
         {% include 'stylesheets.jinja2' %}
         {% include 'initscript.jinja2' %}
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.css" rel="stylesheet">
+        
+        
+        <link href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.css" rel="stylesheet">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.css" rel="stylesheet">
+        
+        <!-- Dropdown.js -->
+        <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+        
+        
+        
     </head>
     <body>
         <div class="page-container">
@@ -145,6 +158,17 @@
             <!-- End of generic plugin template files -->
 
             {% include 'javascripts.jinja2' %}
+    
+    <!-- Material Design for Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.js"></script>
+    
+    <script>
+      $.material.init();
+    </script>
+            
+            
+            
         </div>
     </body>
 </html>
